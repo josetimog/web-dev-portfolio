@@ -344,8 +344,18 @@ button[type=submit]:hover,[type=reset]:hover {
 
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
+    header {
+        padding: 5px 0px;
+    }
+
+    header.sticky {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
     header .btn {
         display: block;
+        padding-right: 15px;
     }
 
     header .menu {
@@ -377,6 +387,15 @@ button[type=submit]:hover,[type=reset]:hover {
         font-size: 20px;
         margin: 20px;
         padding: 0 15px;
+    }
+
+    header .brand {
+        margin: 0px 0px;
+        padding-left: 15px;
+    }
+
+    main #about, main #projects, main #contact {
+        padding: 50px 15px;
     }
 }
 
