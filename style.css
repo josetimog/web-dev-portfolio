@@ -32,6 +32,10 @@ header.sticky{
     transition: 0.6s;
 }
 
+header.sticky .menu a:hover{
+    text-decoration: underline;
+}
+
 header .brand {
     color: #555;
     font-size: 30px;
@@ -88,7 +92,7 @@ header .btn:hover {
 
 /* HERO SECTION */
 
-.hero {
+#hero {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -102,7 +106,7 @@ header .btn:hover {
     padding: 20px 100px;
 }
 
-.hero h1 {
+#hero h1 {
     color: rgba(255, 255, 255);
     background-color: #666;
     font-size: 60px;
@@ -251,6 +255,12 @@ label {
     color: rgba(255, 255, 255, 0.75);
 }
 
+#messageform input:focus-visible {
+    background-color: #fff;
+    outline: 3px solid green;
+    border-radius: 3px;
+}
+
 input[type=text], [type=email], [type=tel] {
     width: 100%;
     padding: 12px;
@@ -258,6 +268,7 @@ input[type=text], [type=email], [type=tel] {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    background-color: #ddd;
 }
 
 button[type=submit], [type=reset] {
@@ -268,7 +279,8 @@ button[type=submit], [type=reset] {
 }
 
 button[type=submit]:hover,[type=reset]:hover {
-    background-color: #45a049;
+    /*background-color: #45a049;*/
+    background-color: green;
 }
 
 .column {

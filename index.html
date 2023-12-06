@@ -12,14 +12,14 @@
     <body>
     
         <header>
-            <a href="#" class="brand">JT</a>
+            <a href="index.html" class="brand">JT</a>
             <div class="menu">
                 <div class="btn">
                     <i class="fas fa-times close-btn"></i>
                 </div>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
             </div>
             <div class="btn">
                 <i class="fas fa-bars menu-btn"></i>
@@ -28,9 +28,9 @@
 
         <main>
 
-            <section class="hero">
+            <section id="hero">
                 <h1>Jose Timog</h1>
-                <h2>SOFTWARE DEV</h2>
+                <h2>ASPIRING SOFTWARE DEV</h2>
             </section>
         
             <section id="about">          
@@ -40,114 +40,17 @@
     
                 <div class="row">
                     <div class="column">
-                        <p>Hi there, I'm Jose. I am a Business Information Technology student at Red River College. I am currently on my second term.</p>
-                        <p>Some of my skills include HTML, CSS, JavaScript, SQL, Java, Python and C#.</p>
-                        <p>I am always open and eager to learning new skills.</p>
+                        <p>Hello and welcome to my corner of the web! I'm Jose Timog, 
+                            a passionate first-year student pursuing Business Information Technology at Red River College Polytechnic. 
+                            My journey into the world of software development is driven by curiosity 
+                            and a keen interest in creating solutions that make a real impact.</p>
+                        <p>Beyond the classroom, I am actively engaged in various projects that allow me to apply my theoretical knowledge to practical, real-world scenarios.
+                            These endeavors not only sharpen my technical skills but also teach me the importance of collaboration, problem-solving, and effective communication in the field of software development.
+                        </p>
+                        <p>I am proficient in a range of programming languages, including but not limited to HTML, CSS, JavaScript, SQL, Java, Python and C#. Additionally, I have hands-on experience with Arduino, electronics and 3-D printing.</p>
                     </div>
                     <div class="column profile">
                         <img src="images/profile.jpg" alt="Profile Picture">                   
-                    </div>
-                </div>               
-            </section>
-    
-            <section id="projects">
-                <div class="section-header">
-                    <h2>Projects</h2>
-                    <p>Here are some examples of my work.</p>
-                </div>
-    
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank" href="images/calculator.jpg">
-                            <img src="images/calculator.jpg" alt="Calculator App" width="600" height="400">
-                        </a>
-                        <div class="desc">Calculator Web App</div>
-                        <div class="project-links">
-                            <a href="https://josetimog.github.io/calculator/">Live Demo</a>
-                            <a href="https://github.com/josetimog/calculator">View Code</a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank" href="images/tictactoe.jpg">
-                            <img src="images/tictactoe.jpg" alt="Tic-Tac-Toe App" width="600" height="400">
-                        </a>
-                        <div class="desc">Tic-Tac-Toe Game</div>
-                        <div class="project-links">
-                            <a href="https://josetimog.github.io/tic-tac-toe/">Live Demo</a>
-                            <a href="https://github.com/josetimog/tic-tac-toe">View Code</a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank" href="images/etch.jpg">
-                            <img src="images/etch.jpg" alt="Etch-a-Sketch App" width="600" height="400">
-                        </a>
-                        <div class="desc">Etch-a-Sketch App</div>
-                        <div class="project-links">
-                            <a href="https://josetimog.github.io/etch-a-sketch/">Live Demo</a>
-                            <a href="https://github.com/josetimog/etch-a-sketch">View Code</a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank" href="images/rockpaperscissors.jpg">
-                            <img src="images/rockpaperscissors.jpg" alt="Rock-Paper-Scissors App" width="600" height="400">
-                        </a>
-                        <div class="desc">Pokemon-themed Rock-Paper-Scissors Game</div>
-                        <div class="project-links">
-                            <a href="https://josetimog.github.io/rock-paper-scissors-v2/">Live Demo</a>
-                            <a href="https://github.com/josetimog/rock-paper-scissors-v2">View Code</a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="clearfix"></div>
-    
-            </section>
-    
-            <section id="contact">
-                <div class="section-header">
-                    <h2>Contact</h2>
-                    <p>If you have a question or just want to chat, feel free to send me a message and I will get back to you.</p>
-                </div>
-                <div class="row">
-                    <div class="column">
-                        <img src="images/contact.jpg" alt="Contact"/>
-                    </div>
-                    <div class="column">
-                        <div class="social">
-                            <a href="https://ca.linkedin.com/in/jose-timog-8520267b"><img src="images/linkedin.svg" alt="LinkedIn Link"></a>
-                            <a href="https://github.com/josetimog"><img src="images/github.svg" alt="GitHub Link" ></a>
-                        </div>
-                        <form id="messageform" action="index.html">  
-                            <label for="fullname">Full Name</label>
-                            <input id="fullname" name="fullname" type="text" placeholder="Name"/>
-                            <p class="messageError error" id="fullname_error">* Required field</p>
-            
-                            <label for="email">Email</label>
-                            <input id="email" name="email" type="email" placeholder="Email"/>
-                            <p class="messageError error" id="email_error">* Required field</p>
-                            <p class="messageError error" id="emailformat_error">* Invalid email address</p>
-                
-                            <label for="tel">Phone</label>
-                            <input id="tel" name="tel" type="tel" placeholder="Phone"/>
-                            <p class="messageError error" id="tel_error">* Required field</p>
-                            <p class="messageError error" id="telformat_error">* Invalid phone number format</p>
-                
-                            <label for="message">Message</label>
-                            <input id="message" name="message" type="text" placeholder="Message"/>
-                            <p class="messageError error" id="message_error">* Required field</p>
-                
-                            <button type="submit" id="submit">Submit</button>
-                            <button type="reset" id="clear">Reset</button>
-                        </form>
                     </div>
                 </div>               
             </section>
@@ -158,6 +61,7 @@
                     <p>Copyright &copy; 2023 Jose Timog</p>
                 </div>
             </section>
+
         </main>
         
 

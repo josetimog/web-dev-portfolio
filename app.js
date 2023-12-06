@@ -58,14 +58,22 @@ function validate(e) {
 
 function formHasErrors() {
     
+    let errorFlag = false;
+    let setFocus = false;
+
     // Determine if there is a name
     let name = document.getElementById("fullname").value;
     if (name === "")
     {
         document.getElementById("fullname_error").style.display = "block";
-        document.getElementById("fullname").focus();
-        document.getElementById("fullname").select();
-        return true;
+        if (!setFocus)
+        {
+            document.getElementById("fullname").focus();
+            document.getElementById("fullname").select();
+            setFocus = true;
+        }
+
+        errorFlag = true;
     }
 
     // Determine if there is a valid email address
@@ -74,9 +82,14 @@ function formHasErrors() {
 	if (!regexEmail.test(email))
 	{
 		document.getElementById("emailformat_error").style.display = "block";
-		document.getElementById("email").focus();
-		document.getElementById("email").select();
-		return true;
+        if (!setFocus)
+        {
+            document.getElementById("email").focus();
+            document.getElementById("email").select();
+            setFocus = true;
+        }
+
+        errorFlag = true;
 	}
 
     // Determine if there is a valid phone number
@@ -85,9 +98,14 @@ function formHasErrors() {
     if (!regexTel.test(tel))
 	{
 		document.getElementById("telformat_error").style.display = "block";
-		document.getElementById("tel").focus();
-		document.getElementById("tel").select();
-		return true;
+        if (!setFocus)
+        {
+            document.getElementById("tel").focus();
+            document.getElementById("tel").select();
+            setFocus = true;
+        }
+
+        errorFlag = true;
 	}
 
     // Determine if there is a message
@@ -95,12 +113,17 @@ function formHasErrors() {
     if (message === "")
     {
         document.getElementById("message_error").style.display = "block";
-        document.getElementById("message").focus();
-        document.getElementById("message").select();
-        return true;
+        if (!setFocus)
+        {
+            document.getElementById("message").focus();
+            document.getElementById("message").select();
+            setFocus = true;
+        }
+
+        errorFlag = true;
     }
 
-    return false;
+    return errorFlag;
 }
 
 function resetForm(e) {
@@ -112,6 +135,7 @@ function resetForm(e) {
     }
     e.preventDefault();
     return false;
+
 }
 
 hideErrors();
