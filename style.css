@@ -317,6 +317,7 @@ button[type=submit]:hover,[type=reset]:hover {
 }
 
 .error {
+    margin-top: 0px !important;
     color: red !important;
 }
 
